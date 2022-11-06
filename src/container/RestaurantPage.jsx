@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import Cart from '../components/Cart';
 const RestaurantPage = () => {
   return (
-    <div className=" w-full h-screen flex flex-col mt-10 ">
+    <div className=" w-full h-full flex flex-col mt-10 ">
       <div className="bg-mainColor h-72  flex items-center justify-start gap-10 p-10">
         <div>
           <img
@@ -64,7 +64,7 @@ const RestaurantPage = () => {
         </div>
       </div>
       {/* Recommended */}
-      <div className="text-black relative h-full">
+      <div className="text-black relative h-full border-2">
         <div className=" absolute -top-5 left-[32%] ">
           <div className="flex gap-4">
             <div className="flex justify-between gap-3  shadow items-center  rounded-lg px-10 py-3 bg-white">
@@ -81,9 +81,9 @@ const RestaurantPage = () => {
             </button>
           </div>
         </div>
-        <div className="section__padding section__margin flex justify-between w-full">
-          <div className="">
-            <div className="flex flex-col border-r-2 ">
+        <div className=" section__padding section__margin flex flex-col md:flex-row justify-between w-full">
+          <div className="border-2 rounded-lg md:border-none mb-2 flex-2">
+            <div className="flex flex-col">
               <Link
                 to={''}
                 className="active:text-secColor text-secColor text-base font-medium mb-2"
@@ -103,8 +103,9 @@ const RestaurantPage = () => {
                 Biriyani Box
               </Link>
             </div>
+            <div className=' absolute top-28 left-56 after:content-[""] bg-gray-400 w-[.2px] h-[480px] '></div>
           </div>
-          <div className="flex-2 ">
+          <div className="  border-2 rounded-lg md:border-none mb-2 flex-3 ">
             <div className="flex items-start justify-between gap-5 mx-10">
               <div className="flex-1">
                 <h4 className=" font-medium text-xl">
@@ -120,9 +121,15 @@ const RestaurantPage = () => {
               </div>
               <div className="flex flex-col justify-center items-center">
                 <img src={restaurantpage} alt="" />
-                <button className="text-green-400 shadow-lg p-3 rounded-lg -mt-10 bg-white font-medium text-base">
+                <Button
+                  class={
+                    'text-green-400 shadow-lg p-3 rounded-lg -mt-8 bg-white font-medium text-base'
+                  }
+                  text={'Add +'}
+                />
+                {/* <button className="text-green-400 shadow-lg p-3 rounded-lg -mt-10 bg-white font-medium text-base">
                   Add +
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

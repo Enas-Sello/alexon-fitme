@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Button = ({ bgColor, color, p, mdpx, text,px,py }) => {
+const Button = ( prop  ) =>
+{
+  console.log(prop)
   return (
     <button
-      className={` bg-${bgColor} rounded-lg text-${color} px-${px} py-${py} capitalize`}
+      className={prop.class}
     >
-      {text}
+    {prop.text}
     </button>
   );
 };

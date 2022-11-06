@@ -1,8 +1,9 @@
 import React from 'react';
+import Button from './Button';
 
 const Cart = () => {
   return (
-    <div className="border-2 flex-2 w-full font-medium">
+    <div className=" border-2 rounded-lg md:border-none flex-2 w-full font-medium">
       <div className="flex justify-between px-10 items-center mb-5">
         <h5 className=" text-2xl">cart</h5>
         <p className="text-base">2 items</p>
@@ -19,7 +20,7 @@ const Cart = () => {
           <div>icon 1 icon</div>
         </div>
       </div>
-      <div className="flex flex-col px-10  ">
+      <div className="flex flex-col px-10 gap-5 mb-5">
         <p>
           from <span className=" text-secColor">linch box</span>
         </p>
@@ -30,13 +31,15 @@ const Cart = () => {
           <div>icon 1 icon</div>
         </div>
       </div>
-
-      <div className="px-10">
+      <div className="flex justify-between items-center text-2xl px-10">
         <p>Subtotal</p>
         <p>₹799</p>
       </div>
-      <p className="px-10">Extra charges may apply</p>
-    </div>
+      <p className="text-sm font-normal text-lightGray px-10">Extra charges may apply</p>
+          <Button class={ 'bg-secColor w-full py-3 mt-5 text-white text-2xl rounded-lg'} text={ 'Checkout'} />
+          
+          {/* <button className=></button> */}
+      </div>
   );
 };
 
