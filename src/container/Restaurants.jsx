@@ -5,15 +5,15 @@ import { recommendFood } from '../data';
 
 const Restaurants = () => {
   return (
-    <div className="flex gap-5 justify-between items-center section__padding w-full h-full">
-      <div className="">
-        <h3 className="font-medium md:text-xl text-2xl md:mb-8 mb-6">
+    <div className="section__margin flex lg:gap-16 md:gap-10 gap-2 justify-between items-start section__padding w-full h-full">
+      <div className="flex-1">
+        <h3 className="font-medium lg:text-2xl text-lg md:mb-7 mb-5">
           Nearby Restaurants
         </h3>
         <FoodCard data={NearbyRestaurants} />
       </div>
-      <div className="">
-        <h3 className="font-medium md:text-xl text-2xl md:mb-8 mb-6">
+      <div className="flex-1">
+        <h3 className="font-medium lg:text-2xl text-lg mb-4 sm:mb-8 leading-4 md:leading-5 ">
           Recommended Food Items
         </h3>
         <FoodCard data={recommendFood} />

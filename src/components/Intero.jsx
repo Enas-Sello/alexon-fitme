@@ -4,7 +4,7 @@ import apple from '../assets/apple.png';
 import banana from '../assets/bananna.png';
 const Intero = () => {
   return (
-    <div className="relative section__padding section__margin">
+    <div className="relative section__margin section__padding section__margin">
       <div className="absolute top-40 -left-72">
         <img src={shape} alt="" />
       </div>

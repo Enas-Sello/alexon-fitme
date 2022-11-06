@@ -8,7 +8,7 @@ import Restaurants from './Restaurants';
 const Home = () => {
   return (
     <div>
-      {/* <Intero /> */}
+      <Intero />
       <Restaurants />
       <Search />
       <Recommend />
