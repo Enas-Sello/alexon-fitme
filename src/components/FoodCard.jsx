@@ -12,7 +12,7 @@ const FoodCard = ({ data }) => {
             alt={item.title}
             className="w-60 h-60 rounded-xl"
           />
-          <h3 className="font-medium text-lg md:text-xl w-[180px] md:w-60 mt-5">
+          <h3 className="font-medium text-lg md:text-xl w-[180px] h-[60px] md:w-60 mt-5">
             {item.title}
           </h3>
           <div className="mt-5">
