@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import { CiSearch } from 'react-icons/ci';
 import { BiShoppingBag } from 'react-icons/bi';
-import Button from './Button'
+import Button from './Button';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
@@ -22,16 +22,13 @@ const Navbar = () => {
           />
           <CiSearch className="font-bold text-3xl text-gray-400 rotate-90" />
         </div>
-        <BiShoppingBag className="font-bold text-3xl " />
+        <Link to='CheckOut'>
+          <BiShoppingBag className="font-bold text-3xl " />
+        </Link>
         <Button
-          class={
-            ' bg-mainColor rounded-lg text-white md:px-4 px-2 py-2 capitalize'
-          }
+          class={' bg-mainColor  text-white md:px-4 px-2 py-2 capitalize'}
           text={'Sigin in'}
         />
-        {/* <button className=>
-          sigin in
-        </button> */}
       </div>
     </div>
   );

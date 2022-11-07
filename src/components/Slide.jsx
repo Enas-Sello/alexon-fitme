@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,9 +10,8 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper';
+import { EffectCoverflow, Autoplay, EffectFade } from 'swiper';
 // import required modules
-import { Autoplay, EffectFade } from 'swiper';
 
 import slide1 from '../assets/slide1.png'
 import slide2 from '../assets/slide2.png';
@@ -21,8 +20,8 @@ const Slide = () => {
   return (
     <>
       <Swiper
-        effect={ 'coverflow' }
-        grabCursor={true}
+        effect={'coverflow'}
+        grabCursor={false}
         centeredSlides={true}
         slidesPerView={'auto'}
         coverflowEffect={{
@@ -31,13 +30,16 @@ const Slide = () => {
           depth: 100,
           modifier: 1,
           slideShadows: true,
+          
         }}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
+          waitForTransition: true,
+          pauseOnMouseEnter: true,
         }}
         pagination={false}
-        modules={[EffectCoverflow, Autoplay]}
+        modules={[EffectCoverflow, Autoplay, EffectFade]}
         className="hidden lg:block"
       >
         <SwiperSlide>

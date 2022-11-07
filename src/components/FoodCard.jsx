@@ -1,12 +1,19 @@
 import React from 'react';
 import Rate from './Rate';
+import { Link } from 'react-router-dom';
+
+
+
 
 const FoodCard = ({ data }) => {
   console.log(data);
   return (
     <div className="flex sm:flex-col lg:flex-row flex-wrap gap-12 ">
       {data?.map((item, i) => (
-        <div key={i} className="flex flex-col p-2 md:p-3 rounded-lg bg-lightGray">
+        <div
+          key={i}
+          className="flex flex-col p-2 md:p-3 rounded-lg bg-lightGray"
+        >
           <img
             src={item.img}
             alt={item.title}
@@ -17,7 +24,10 @@ const FoodCard = ({ data }) => {
           </h3>
           <div className="mt-5">
             <div className="flex justify-between items-center my-2 md:my-5">
-              <p className="text-gray-400 text-base w-36 md:w-64 lg:w-full">{item.place}</p>
+              <p className="text-gray-400 text-base w-36 md:w-64 lg:w-full">
+                {item.place}
+              </p>
+
               {item?.rate?.map((rate) => (
                 <Rate rate={rate} />
               ))}
@@ -37,7 +47,7 @@ const FoodCard = ({ data }) => {
                     <>
                       <x.icon className="w-5 h-5 opacity-75 fill-secColor" />
                       <p className="text-xs md:text-base font-medium">
-                        {x.people}
+                        <Link to="RestaurantPage">{x.people}</Link>
                       </p>
                     </>
                   ))

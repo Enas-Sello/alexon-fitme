@@ -10,6 +10,7 @@ const Restaurants = () => {
         <h3 className="font-medium lg:text-2xl text-lg md:mb-7 mb-5">
           Nearby Restaurants
         </h3>
+        
         <FoodCard data={NearbyRestaurants} />
       </div>
       <div className="flex-1">

@@ -1,13 +1,13 @@
 import React from 'react';
+import Button from '../components/Button';
+import Cart from '../components/Cart';
 import Restaurant from '../assets/Restaurant.png';
 import restaurantpage from '../assets/restaurantpage..png';
 import percent from '../assets/persent.png';
 import { AiFillStar } from 'react-icons/ai';
-import Button from '../components/Button';
 import { CiSearch } from 'react-icons/ci';
 import { ImStarEmpty } from 'react-icons/im';
 import { Link } from 'react-router-dom';
-import Cart from '../components/Cart';
 const RestaurantPage = () => {
   return (
     <div className=" w-full h-full flex flex-col mt-10 ">
@@ -69,9 +69,9 @@ const RestaurantPage = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex justify-between gap-3  shadow items-center  rounded-lg px-10 py-3 bg-white">
               <input
-                type="text"
-                placeholder="Search for dish"
-                className="font-medium text-xs md:text-base"
+                type='text'
+                placeholder='Search for dish'
+                className='font-medium text-xs md:text-base'
               />
               <CiSearch className="font-bold w-5 stroke-slate-500 fill-gray-500 rotate-90" />
             </div>
@@ -124,13 +124,10 @@ const RestaurantPage = () => {
                 <img src={restaurantpage} alt="" />
                 <Button
                   class={
-                    'text-green-400 shadow-lg p-3 rounded-lg -mt-8 bg-white font-medium text-base'
+                    'text-green-400 shadow-lg p-3  -mt-8 bg-white font-medium text-base'
                   }
                   text={'Add +'}
                 />
-                {/* <button className="text-green-400 shadow-lg p-3 rounded-lg -mt-10 bg-white font-medium text-base">
-                  Add +
-                </button> */}
               </div>
             </div>
           </div>

@@ -3,7 +3,9 @@ import shape from '../assets/Union.png';
 import apple from '../assets/apple.png';
 import banana from '../assets/bananna.png';
 import Slide from './Slide';
+import Button from './Button';
 const Intero = () => {
+
   return (
     <div className="relative section__padding w-full h-full">
       <div className="hidden lg:block absolute top-40 -left-64">
@@ -47,23 +49,24 @@ const Intero = () => {
             <div className="flex flex-col md:flex-row items-center gap-5 my-5">
               <input
                 type="text"
-                placeholder="Enter your delivery location"
+                placeholder={'Enter your delivery location'}
                 className="border-2  py-3 px-5 rounded-lg w-full md:w-1/2"
               />
-              <button className="bg-mainColor py-3 px-5 rounded-lg text-white">
-                Get Started
-              </button>
+              <Button
+                class={'bg-mainColor py-3 px-5  text-white'}
+                text={' Get Started'}
+              />
             </div>
             <div className="flex flex-col gap-5 md:gap-10">
               <h4 className="font-medium">Popular cities in India</h4>
               <div>
                 <ul className="flex flex-col md:flex-row  md:items-center gap-1 md:gap-5">
                   <li>Hyderabad</li>
-                  <li>Chennai</li>
+                  <li className="text-secColor">Chennai</li>
                   <li>Mumbai</li>
-                  <li>Bangalore</li>
+                  <li className="text-secColor">Bangalore</li>
                   <li>Delhi</li>
-                  <li>Kolkata</li>
+                  <li className="text-secColor">Kolkata</li>
                 </ul>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const Cart = () => {
@@ -8,7 +9,6 @@ const Cart = () => {
         <h5 className=" text-2xl">cart</h5>
         <p className="text-base">2 items</p>
       </div>
-      {/* <div><p>from <span>linch box</span></p></div> */}
       <div className="flex flex-col px-10 gap-5 mb-5">
         <p>
           from <span className=" text-secColor">linch box</span>
@@ -35,11 +35,16 @@ const Cart = () => {
         <p>Subtotal</p>
         <p>₹799</p>
       </div>
-      <p className="text-sm font-normal text-lightGray px-10">Extra charges may apply</p>
-          <Button class={ 'bg-secColor w-full py-3 mt-5 text-white text-2xl rounded-lg'} text={ 'Checkout'} />
-          
-          {/* <button className=></button> */}
-      </div>
+      <p className="text-sm font-normal text-lightGray px-10">
+        Extra charges may apply
+      </p>
+      <Link to="/CheckOut">
+        <Button
+          class={'bg-secColor w-full py-3 mt-5 text-white text-2xl'}
+          text={'Checkout'}
+        />
+      </Link>
+    </div>
   );
 };
 

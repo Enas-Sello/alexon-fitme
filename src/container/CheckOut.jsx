@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Cart from '../components/Cart';
+import Button from '../components/Button';
 import { MdPlace } from 'react-icons/md';
 import { AiOutlineCalendar } from 'react-icons/ai';
-import Button from '../components/Button';
+
 const CheckOut = () => {
+  const [active, setActive] = useState(true);
+
+  const handelActiveToggle = () => {
+    setActive(!active);
+  };
+
+  console.log(active);
+
   return (
     <div className="w-full h-full section__padding ">
       <h2 className="font-semibold text-2xl w-full border-b-2 pb-2 mb-10">
@@ -18,16 +27,38 @@ const CheckOut = () => {
               <h3>Delivery address</h3>
             </div>
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="flex flex-col bg-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg">
-                <MdPlace className="fill-white w-6 h-8" />
-                <p className="text-white w-72">
+              <div
+                className={
+                  active
+                    ? 'flex flex-col bg-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg'
+                    : 'flex flex-col border-2 border-dashed border-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg'
+                }
+                onClick={handelActiveToggle}
+              >
+                <MdPlace
+                  className={
+                    active ? 'fill-white w-6 h-8' : ' fill-black w-6 h-8'
+                  }
+                />
+                <p className={active ? 'text-white w-72' : ' text-black w-72'}>
                   Dno. 12-34-12, XYC Apartments, DOOR Colony, Hyderabad,
                   Telangana
                 </p>
               </div>
-              <div className="flex flex-col border-2 border-dashed border-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg">
-                <MdPlace className="fill-black w-6 h-8" />
-                <p className="text-black w-72">
+              <div
+                className={
+                  !active
+                    ? 'flex flex-col bg-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg'
+                    : 'flex flex-col border-2 border-dashed border-secColor py-2 px-4 lg:py-4 lg:px-8 rounded-lg'
+                }
+                onClick={handelActiveToggle}
+              >
+                <MdPlace
+                  className={
+                    !active ? 'fill-white w-6 h-8' : ' fill-black w-6 h-8'
+                  }
+                />
+                <p className={!active ? 'text-white w-72' : ' text-black w-72'}>
                   Dno. 12-34-12, XYC Apartments, DOOR Colony, Hyderabad,
                   Telangana
                 </p>
@@ -57,7 +88,7 @@ const CheckOut = () => {
           </div>
           {/* subscription */}
           <div className="mt-10 flex flex-col md:flex-row justify-between mr-8">
-            <div className='mr-3'>
+            <div className="mr-3">
               {' '}
               <div className=" font-semibold text-base mb-10">
                 <h3>Type of subscription ?</h3>
@@ -80,15 +111,11 @@ const CheckOut = () => {
                 <h5>What’s the plan?</h5>
                 <div className="flex gap-8">
                   <Button
-                    class={
-                      'text-secColor py-3 px-6 rounded-lg border-2 border-secColor'
-                    }
+                    class={'text-secColor py-3 px-6  border-2 border-secColor'}
                     text={'3-Days/Week'}
                   />
                   <Button
-                    class={
-                      'text-black py-3 px-6 rounded-lg border-2 border-black'
-                    }
+                    class={'text-black py-3 px-6 border-2 border-black'}
                     text={'5-Days/Week'}
                   />
                 </div>
