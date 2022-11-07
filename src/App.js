@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<RestaurantPage />} />
         <Route path="/CheckOut" element={<CheckOut />} />
+        <Route path="/:id" element={<RestaurantPage />} />
       </Routes>
       <Footer />
     </Router>
