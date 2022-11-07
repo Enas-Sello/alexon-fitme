@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../assets/logo.png';
-import { CiSearch } from 'react-icons/ci';
-import { BiShoppingBag } from 'react-icons/bi';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import { CiSearch } from 'react-icons/ci';
+import { BiShoppingBag } from 'react-icons/bi';
 const Navbar = () => {
   return (
     <div className="section__padding flex gap-1 justify-between items-center w-full h-16 ">

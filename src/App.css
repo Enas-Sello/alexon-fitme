@@ -1,16 +1,9 @@
-:root {
-  /* --orange-color:#FC8019; */
-  /* --main-color:#202020; */
-  /* --sub-color:#404040; */
-  /* --color-bg:#FFFFFF; */
-}
-
+/* global */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* text-transform: capitalize; */
   outline: none;
   color: #202020;
 }
@@ -50,6 +43,8 @@ a {
     margin: 4rem 0rem;
   }
 }
+
+/* animationX */
 
 .animationX {
   animation: bounceX 1s infinite;

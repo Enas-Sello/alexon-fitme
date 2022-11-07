@@ -66,6 +66,7 @@ const CheckOut = () => {
             </div>
           </div>
           {/* order */}
+          
           <div className="mt-10 ">
             <div className=" font-semibold text-2xl flex  items-center gap-2 mb-10">
               <MdPlace className="fill-secColor w-6 h-8" />

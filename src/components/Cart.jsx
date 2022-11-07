@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
-
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 const Cart = () => {
   return (
     <div className=" border p-2 rounded-lg md:border-none flex-2 w-full font-medium">
@@ -17,7 +17,11 @@ const Cart = () => {
           <div>
             <h5>Brunch for 2 - Veg</h5> <p className=" text-lightGray">₹599</p>
           </div>
-          <div>icon 1 icon</div>
+          <div className="flex justify-between items-center">
+            <AiOutlineMinus />
+            <p className="m-1">1</p>
+            <AiOutlinePlus />
+          </div>
         </div>
       </div>
       <div className="flex flex-col px-10 gap-5 mb-5">
@@ -28,7 +32,11 @@ const Cart = () => {
           <div>
             <h5>Brunch for 2 - Veg</h5> <p className=" text-lightGray">₹599</p>
           </div>
-          <div>icon 1 icon</div>
+          <div className="flex justify-between items-center">
+            <AiOutlineMinus />
+            <p className="m-1">1</p>
+            <AiOutlinePlus />
+          </div>
         </div>
       </div>
       <div className="flex justify-between items-center text-2xl px-10">

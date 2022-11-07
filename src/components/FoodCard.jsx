@@ -2,9 +2,6 @@ import React from 'react';
 import Rate from './Rate';
 import { Link } from 'react-router-dom';
 
-
-
-
 const FoodCard = ({ data }) => {
   console.log(data);
   return (
@@ -17,7 +14,7 @@ const FoodCard = ({ data }) => {
           <img
             src={item.img}
             alt={item.title}
-            className=" w-60 h-60 rounded-lg object-contain md:m-9 lg:m-0 "
+            className=" w-full h-60 rounded-lg object-contain md:m-9 lg:m-0 "
           />
           <h3 className="font-medium text-lg md:text-xl w-[180px] h-[60px] md:w-60 mt-5 ">
             {item.title}
@@ -27,13 +24,14 @@ const FoodCard = ({ data }) => {
               <p className="text-gray-400 text-base w-36 md:w-64 lg:w-full">
                 {item.place}
               </p>
-
+              {/*  */}
               {item?.rate?.map((rate) => (
                 <Rate rate={rate} />
               ))}
             </div>
             <div className="flex justify-between items-center ">
               <div className="flex items-center gap-1">
+                {/*  */}
                 {item.distance.map((x) => (
                   <>
                     <x.icon className="w-5 h-5 opacity-75 fill-secColor" />
@@ -42,6 +40,7 @@ const FoodCard = ({ data }) => {
                 ))}
               </div>
               <div className="flex items-center gap-1">
+                {/*  */}
                 {item?.amount ? (
                   item?.amount?.map((x) => (
                     <>
@@ -53,6 +52,7 @@ const FoodCard = ({ data }) => {
                   ))
                 ) : (
                   <>
+                    {/*  */}
                     {item?.price?.map((x) => (
                       <>
                         <x.icon className="w-5 h-5 opacity-75 fill-secColor stroke-secColor" />
