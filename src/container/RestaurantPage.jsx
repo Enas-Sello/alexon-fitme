@@ -83,7 +83,7 @@ const RestaurantPage = () => {
         </div>
         <div className=" section__padding section__margin flex flex-col md:flex-row justify-between w-full">
           <div className="border rounded-lg md:border-none mb-2 hidden lg:flex">
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-start items-center ">
               <Link
                 to={''}
                 className="active:text-secColor text-secColor text-base font-medium mb-2"

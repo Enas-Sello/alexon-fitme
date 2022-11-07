@@ -24,6 +24,19 @@ a {
   margin: 4rem 0rem;
 }
 
+/* cart */
+
+.cart__p {
+  color: #808080;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+.cart__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* cart */
 @media screen and (max-width: 700px) {
   .section__padding {
     padding: 3rem;
