@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/alexon-fitme/static/css/main.5c3b4dcc.css",
+    "main.js": "/alexon-fitme/static/js/main.534bc364.js",
+    "static/js/787.b76c8325.chunk.js": "/alexon-fitme/static/js/787.b76c8325.chunk.js",
+    "static/media/slide1.png": "/alexon-fitme/static/media/slide1.7033905cd5bdf82fc61f.png",
+    "static/media/slide2.png": "/alexon-fitme/static/media/slide2.013f5f6cd921fe9c1be0.png",
+    "static/media/slide3.png": "/alexon-fitme/static/media/slide3.7ded8e8c2a201d6fd89d.png",
+    "static/media/Restaurant.png": "/alexon-fitme/static/media/Restaurant.9b169dcb1ffe73eb91f2.png",
+    "static/media/personalized2.png": "/alexon-fitme/static/media/personalized2.fde539d0cacaf0fff5c2.png",
+    "static/media/personalized3.png": "/alexon-fitme/static/media/personalized3.fde539d0cacaf0fff5c2.png",
+    "static/media/Nearby4.png": "/alexon-fitme/static/media/Nearby4.c779f421391dfe2079fb.png",
+    "static/media/recommendFood4.png": "/alexon-fitme/static/media/recommendFood4.39367b31406df823c11c.png",
+    "static/media/recommendFood1.png": "/alexon-fitme/static/media/recommendFood1.6aa2423e77a0e7a38ed7.png",
+    "static/media/Nearby2.png": "/alexon-fitme/static/media/Nearby2.82c76d4d79f88855a4da.png",
+    "static/media/Nearby1.png": "/alexon-fitme/static/media/Nearby1.b0a879e010024e5c2769.png",
+    "static/media/personalized1.png": "/alexon-fitme/static/media/personalized1.2678ca3fabdfe3410a49.png",
+    "static/media/recommendFood3.png": "/alexon-fitme/static/media/recommendFood3.2678ca3fabdfe3410a49.png",
+    "static/media/recommendFood2.png": "/alexon-fitme/static/media/recommendFood2.c27c21f58066f2fea29e.png",
+    "static/media/Nearby3.png": "/alexon-fitme/static/media/Nearby3.d1baaf9f1a115a2b8d5b.png",
+    "static/media/personalized4.png": "/alexon-fitme/static/media/personalized4.73da600745866b430b75.png",
+    "static/media/restaurantpage..png": "/alexon-fitme/static/media/restaurantpage..b6b9919f93bfead7e6ae.png",
+    "static/media/menu2.png": "/alexon-fitme/static/media/menu2.bb580d6b8b45312a0bd0.png",
+    "static/media/menu3.png": "/alexon-fitme/static/media/menu3.abe6d34e36d3058ab943.png",
+    "static/media/menu4.png": "/alexon-fitme/static/media/menu4.325b11630674bdcdc233.png",
+    "static/media/menu1.png": "/alexon-fitme/static/media/menu1.380f9ac84ea71ad5dc2e.png",
+    "static/media/menu5.png": "/alexon-fitme/static/media/menu5.19cc4590b4803f6ea1e3.png",
+    "static/media/menu6.png": "/alexon-fitme/static/media/menu6.d2412d7291b888d8cc1e.png",
+    "index.html": "/alexon-fitme/index.html",
+    "main.5c3b4dcc.css.map": "/alexon-fitme/static/css/main.5c3b4dcc.css.map",
+    "main.534bc364.js.map": "/alexon-fitme/static/js/main.534bc364.js.map",
+    "787.b76c8325.chunk.js.map": "/alexon-fitme/static/js/787.b76c8325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c3b4dcc.css",
+    "static/js/main.534bc364.js"
+  ]
+}
