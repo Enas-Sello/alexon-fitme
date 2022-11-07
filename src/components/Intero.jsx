@@ -21,17 +21,17 @@ const Intero = () => {
                 <img
                   src={banana}
                   alt="banana"
-                  className=" object-contain animate-bounce md:w-5 md:h-5 "
+                  className=" object-contain animationY md:w-5 md:h-5 "
                 />
               </div>
-              <h5 className="text-secColor"> healthy </h5>
             </div>
+            <h5 className="text-secColor"> healthy </h5>
             <div className="flex items-center  gap-1 lg:gap-4">
-              <div className="hidden md:block bg-red-100 py-1 px-4 lg:py-4 lg:px-8 rounded-full ">
+              <div className="hidden md:block  bg-red-100 py-1 px-4 lg:py-4 lg:px-8 rounded-full ">
                 <img
                   src={apple}
                   alt=""
-                  className=" object-contain animate-bounce md:w-5 md:h-5"
+                  className=" object-contain animationX md:w-5 md:h-5"
                 />
               </div>
               <h5 className="text-secColor"> & Daily Life </h5>
@@ -69,8 +69,7 @@ const Intero = () => {
             </div>
           </div>
         </div>
-     
-          <Slide  />
+        <Slide />
       </div>
     </div>
   );

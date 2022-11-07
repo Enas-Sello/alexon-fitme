@@ -41,13 +41,13 @@ const Slide = () => {
         className="hidden lg:block"
       >
         <SwiperSlide>
-          <img src={slide1} />
+          <img src={slide1} alt="slide" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide2} />
+          <img src={slide2} alt="slide" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide3} />
+          <img src={slide3} alt="slide" />
         </SwiperSlide>
       </Swiper>
     </>

@@ -1,11 +1,9 @@
-:root{
-    /* --orange-color:#FC8019; */
-    /* --main-color:#202020; */
-    /* --sub-color:#404040; */
-    /* --color-bg:#FFFFFF; */
-
+:root {
+  /* --orange-color:#FC8019; */
+  /* --main-color:#202020; */
+  /* --sub-color:#404040; */
+  /* --color-bg:#FFFFFF; */
 }
-
 
 * {
   box-sizing: border-box;
@@ -49,7 +47,36 @@ a {
   }
 
   .section__margin {
-    margin: 4rem  0rem;
+    margin: 4rem 0rem;
   }
 }
 
+.animationX {
+  animation: bounceX 1s infinite;
+}
+.animationY {
+  animation: bounceY 1s infinite;
+}
+
+@keyframes bounceX {
+  0%,
+  100% {
+    transform: translateX(-65%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(65%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes bounceY {
+  0%,
+  100% {
+    transform: translateY(-65%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(65%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
