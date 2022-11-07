@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   outline: none;
   color: #202020;
 }

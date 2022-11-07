@@ -83,8 +83,8 @@ export const NearbyRestaurants = [
   },
   {
     img: `${Nearby4}`,
-    title: 'The Good Bowl - Traditional Bowls',
-    place: 'North Indian, Punjabi',
+    title: 'The Good Bowl-Traditional Bowls',
+    place: 'North India',
     rate: [{ icon: AiFillStar, number: '4.8' }],
     distance: [
       {
