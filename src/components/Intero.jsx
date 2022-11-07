@@ -2,14 +2,15 @@ import React from 'react';
 import shape from '../assets/Union.png';
 import apple from '../assets/apple.png';
 import banana from '../assets/bananna.png';
+import Slide from './Slide';
 const Intero = () => {
   return (
     <div className="relative section__padding w-full h-full">
       <div className="hidden lg:block absolute top-40 -left-64">
         <img src={shape} alt="" />
       </div>
-      <div className="flex flex-col lg:flex-row ml-20">
-        <div className="flex-1">
+      <div className="flex flex-col lg:flex-row ml-20 justify-between w-full">
+        <div className="flex-1 mr-10">
           <div className="flex flex-col justify-center lg:leading-snug	 font-medium text-3xl lg:text-6xl">
             <h5 className="">
               Premium <span className="text-secColor">quality </span>
@@ -54,7 +55,7 @@ const Intero = () => {
               </button>
             </div>
             <div className="flex flex-col gap-5 md:gap-10">
-              <h4 className='font-medium'>Popular cities in India</h4>
+              <h4 className="font-medium">Popular cities in India</h4>
               <div>
                 <ul className="flex flex-col md:flex-row  md:items-center gap-1 md:gap-5">
                   <li>Hyderabad</li>
@@ -68,7 +69,8 @@ const Intero = () => {
             </div>
           </div>
         </div>
-        <div className="flex ">Premium quality</div>
+     
+          <Slide  />
       </div>
     </div>
   );
