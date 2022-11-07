@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 const Cart = () => {
+  // counter
+  const [counter, setCounter] = useState(1);
+
+  //increase counter
+  const increase = () => {
+    setCounter((count) => count + 1);
+  };
+
+  //decrease counter
+  const decrease = () => {
+    if (counter > 1) setCounter((count) => count - 1);
+  };
+
+  // counter
+
   return (
     <div className=" border p-2 rounded-lg md:border-none flex-2 w-full font-medium">
       <div className="flex justify-between px-10 items-center mb-5">
@@ -18,9 +33,13 @@ const Cart = () => {
             <h5>Brunch for 2 - Veg</h5> <p className=" text-lightGray">₹599</p>
           </div>
           <div className="flex justify-between items-center">
-            <AiOutlineMinus />
+            <button onClick={decrease}>
+              <AiOutlineMinus />
+            </button>
             <p className="m-1">1</p>
-            <AiOutlinePlus />
+            <button onClick={increase}>
+              <AiOutlinePlus />
+            </button>
           </div>
         </div>
       </div>

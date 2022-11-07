@@ -15,12 +15,9 @@ const CheckOut = () => {
   };
 
   //decrease counter
-  const decrease = () => {
-    setCounter((count) => count - 1);
-  };
-
-
-
+ const decrease = () => {
+   if (counter > 1) setCounter((count) => count - 1);
+ };
   // counter
 
   const [active, setActive] = useState(true);
