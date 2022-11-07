@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className=" section__padding bg-secondaryColor h-64 flex flex-col items-center justify-center">
-      <div className="flex  w-full justify-between items-center">
+      <div className="flex flex-col md:flex-row w-full justify-between items-center">
         <div>
           <img src={logowhite} alt="logo" className="w-full object-cover " />
         </div>
-        <div className="flex gap-14  font-medium text-base">
+        <div className="flex gap-3 lg:gap-14  font-medium text-sm lg:text-base">
           <p className="text-white">About us</p>
           <p className="text-white">Delivery</p>
           <p className="text-white">Help & Support</p>

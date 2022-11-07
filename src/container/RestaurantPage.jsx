@@ -11,12 +11,12 @@ import Cart from '../components/Cart';
 const RestaurantPage = () => {
   return (
     <div className=" w-full h-full flex flex-col mt-10 ">
-      <div className="bg-mainColor h-72  flex items-center justify-start gap-10 p-10">
+      <div className="bg-mainColor h-72  flex  items-center justify-start gap-10 p-10">
         <div>
           <img
             src={Restaurant}
             alt="Restaurant"
-            className="  object-cover w-full"
+            className=" object-cover w-full hidden md:block"
           />
         </div>
         <div className="flex flex-col justify-between item-center gap-10">
@@ -27,7 +27,7 @@ const RestaurantPage = () => {
             North Indian, Punjabi
           </p>
           <div className="flex items-center justify-between w-full">
-            <div className="border-r-2 pr-6">
+            <div className="border-none md:border-r-2 pr-6">
               <div className="flex items-center">
                 <AiFillStar className="fill-green-500" />
                 <p className="text-white">4.0</p>
@@ -37,7 +37,7 @@ const RestaurantPage = () => {
                 <p className="text-white">ratings</p>
               </div>
             </div>
-            <div className="flex-col border-r-2 pr-6">
+            <div className="flex-col border-none md:border-r-2 pr-6">
               <p className="text-white">30 mins</p>
               <p className="text-white">Delivery Time</p>
             </div>
@@ -47,7 +47,7 @@ const RestaurantPage = () => {
             </div>
           </div>
         </div>
-        <div className=" hidden lg:block border-2 border-dashed border-secColor w-1/3 h-[184px] p-7 rounded-lg">
+        <div className=" hidden lg:block border-2 border-dashed border-secColor w-2/4 h-[184px] p-7 rounded-lg">
           <p className=" font-medium text-2xl text-secColor">offers</p>
           <div className="flex items-center gap-2 my-6">
             <img src={percent} alt="offer" className=" object-contain" />
@@ -65,8 +65,8 @@ const RestaurantPage = () => {
       </div>
       {/* Recommended */}
       <div className="text-black relative h-full border-2">
-        <div className=" absolute -top-5 left-[32%] ">
-          <div className="flex gap-4">
+        <div className=" absolute -top-5 left-20 md:left-[32%] ">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex justify-between gap-3  shadow items-center  rounded-lg px-10 py-3 bg-white">
               <input
                 type="text"
@@ -82,8 +82,8 @@ const RestaurantPage = () => {
           </div>
         </div>
         <div className=" section__padding section__margin flex flex-col md:flex-row justify-between w-full">
-          <div className="border-2 rounded-lg md:border-none mb-2 flex-2">
-            <div className="flex flex-col">
+          <div className="border rounded-lg md:border-none mb-2 hidden lg:flex">
+            <div className="flex flex-col justify-center items-center ">
               <Link
                 to={''}
                 className="active:text-secColor text-secColor text-base font-medium mb-2"
@@ -103,23 +103,24 @@ const RestaurantPage = () => {
                 Biriyani Box
               </Link>
             </div>
-            <div className=' absolute top-28 left-56 after:content-[""] bg-gray-400 w-[.2px] h-[480px] '></div>
+            {/* info */}
+            <div className='hidden md:block absolute top-28 left-56 after:content-[""] bg-gray-400 w-[.2px] h-[480px] '></div>
           </div>
-          <div className="  border-2 rounded-lg md:border-none mb-2 flex-3 ">
-            <div className="flex items-start justify-between gap-5 mx-10">
+          <div className="  border rounded-lg md:border-none mb-2 flex ">
+            <div className="flex flex-col md:flex-row md:items-start justify-center md:justify-between gap-5 mx-10">
               <div className="flex-1">
                 <h4 className=" font-medium text-xl">
                   Brunch for 2 - Veg (Save upto Rs.45)
                 </h4>
                 <p className="font-medium text-base">₹599</p>
-                <p className="text-base font-normal text-lightGray w-3/4">
+                <p className="text-base font-normal text-lightGray md:w-3/4">
                   Brunch: One meal to rule them all! Grab this mega saver combo
                   with your choice of 2 veg wraps, Aloo Paratha (2 pcs), chole
                   and Curd lunchbox and 2 choco lava cakes. This is just bliss
                   on a plate!
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center p-1">
                 <img src={restaurantpage} alt="" />
                 <Button
                   class={

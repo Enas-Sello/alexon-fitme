@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Cart = () => {
   return (
-    <div className=" border-2 rounded-lg md:border-none flex-2 w-full font-medium">
+    <div className=" border p-2 rounded-lg md:border-none flex-2 w-full font-medium">
       <div className="flex justify-between px-10 items-center mb-5">
         <h5 className=" text-2xl">cart</h5>
         <p className="text-base">2 items</p>

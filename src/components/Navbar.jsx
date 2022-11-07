@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className=" flex justify-between gap-2 items-center">
         <div className="flex justify-between gap-3 items-center border border-gray-300 rounded-lg px-4 py-1">
           <input
-            className="lg:w-[450px] font-medium text-xs md:text-base"
+            className="lg:w-[450px] font-medium text-xs md:text-base hidden md:block"
             type="text"
             placeholder="Enter item or restaurant you are looking for"
           />
