@@ -22,11 +22,13 @@ const Navbar = () => {
           />
           <CiSearch className="font-bold text-3xl text-gray-400 rotate-90" />
         </div>
-        <Link to='CheckOut'>
-          <BiShoppingBag className="font-bold text-3xl " />
+        <Link to="CheckOut">
+          <BiShoppingBag className="font-bold text-3xl hover:fill-secColor transition-all ease-in-out" />
         </Link>
         <Button
-          class={' bg-mainColor  text-white md:px-4 px-2 py-2 capitalize'}
+          class={
+            ' bg-mainColor  text-white md:px-4 px-2 py-2 capitalize  hover:bg-secColor transition-all ease-in-out'
+          }
           text={'Sigin in'}
         />
       </div>

@@ -69,15 +69,17 @@ const RestaurantPage = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex justify-between gap-3  shadow items-center  rounded-lg px-10 py-3 bg-white">
               <input
-                type='text'
-                placeholder='Search for dish'
-                className='font-medium text-xs md:text-base'
+                type="text"
+                placeholder="Search for dish"
+                className="font-medium text-xs md:text-base"
               />
               <CiSearch className="font-bold w-5 stroke-slate-500 fill-gray-500 rotate-90" />
             </div>
-            <button className="flex gap-1 shadow items-center bg-white px-5 py-2 rounded-lg">
-              <ImStarEmpty className="fill-black" />
-              Favourite
+            <button className="flex gap-1 shadow items-center bg-white px-5 py-2 rounded-lg group ">
+              <ImStarEmpty className="fill-black group-hover:fill-red-600 transition-all ease-in-out" />
+              <p className="group-hover:text-red-600 transition-all ease-in-out">
+                Favourite
+              </p>
             </button>
           </div>
         </div>

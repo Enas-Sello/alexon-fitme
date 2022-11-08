@@ -17,7 +17,9 @@ const Search = () => {
         />
 
         <Button
-          class={'bg-mainColor text-white md:px-4 px-4 py-2 text-sm'}
+          class={
+            'bg-mainColor text-white md:px-4 px-4 py-2 text-sm hover:bg-slate-500 transition-all ease-in-out'
+          }
           text={'Search Now'}
         />
       </div>

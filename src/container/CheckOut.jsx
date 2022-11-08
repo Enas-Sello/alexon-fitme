@@ -228,7 +228,7 @@ const CheckOut = () => {
             <Link to="/CheckOut">
               <Button
                 class={
-                  'bg-secColor w-full py-3 mt-5 text-white text-base font-medium'
+                  'bg-secColor w-full py-3 mt-5 text-white text-base font-medium transition-all ease-in-out hover:bg-mainColor'
                 }
                 text={'Proceed To Payment'}
               />

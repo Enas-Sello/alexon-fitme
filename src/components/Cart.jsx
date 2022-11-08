@@ -36,7 +36,7 @@ const Cart = () => {
             <button onClick={decrease}>
               <AiOutlineMinus />
             </button>
-            <p className="m-1">1</p>
+            <p className="m-1">{counter}</p>
             <button onClick={increase}>
               <AiOutlinePlus />
             </button>
@@ -67,7 +67,9 @@ const Cart = () => {
       </p>
       <Link to="/CheckOut">
         <Button
-          class={'bg-secColor w-full py-3 mt-5 text-white text-2xl'}
+          class={
+            'bg-secColor w-full py-3 mt-5 text-white text-2xl transition-all ease-in-out hover:bg-mainColor'
+          }
           text={'Checkout'}
         />
       </Link>

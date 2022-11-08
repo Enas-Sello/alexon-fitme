@@ -53,7 +53,9 @@ const Intero = () => {
                 className="border-2  py-3 px-5 rounded-lg w-full md:w-1/2"
               />
               <Button
-                class={'bg-mainColor py-3 px-5  text-white'}
+                class={
+                  'bg-mainColor py-3 px-5  text-white hover:bg-secColor transition-all ease-in-out'
+                }
                 text={' Get Started'}
               />
             </div>

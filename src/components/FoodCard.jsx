@@ -9,7 +9,7 @@ const FoodCard = ({ data }) => {
       {data?.map((item, i) => (
         <div
           key={i}
-          className="flex flex-col p-2 md:p-3 rounded-lg bg-lightGray"
+          className="flex flex-col p-2 md:p-3 rounded-lg bg-lightGray hover:bg-gray-200 transition-all ease-in-out"
         >
           <img
             src={item.img}
