@@ -21,7 +21,7 @@ a {
 }
 
 .section__margin {
-  margin: 4rem 0rem;
+  margin: 3rem 0rem;
 }
 
 /* cart */
@@ -49,11 +49,11 @@ a {
 
 @media screen and (max-width: 550px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .section__margin {
-    margin: 4rem 0rem;
+    margin: 3rem 0rem;
   }
 }
 

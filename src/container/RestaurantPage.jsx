@@ -27,7 +27,7 @@ const RestaurantPage = () => {
             North Indian, Punjabi
           </p>
           <div className="flex items-center justify-between w-full">
-            <div className="border-none md:border-r-2 pr-6">
+            <div className=" md:border-r-2 pr-6">
               <div className="flex items-center">
                 <AiFillStar className="fill-green-500" />
                 <p className="text-white">4.0</p>
@@ -37,7 +37,7 @@ const RestaurantPage = () => {
                 <p className="text-white">ratings</p>
               </div>
             </div>
-            <div className="flex-col border-none md:border-r-2 pr-6">
+            <div className="flex-col md:border-r-2 pr-6">
               <p className="text-white">30 mins</p>
               <p className="text-white">Delivery Time</p>
             </div>
