@@ -148,9 +148,9 @@ const CheckOut = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 h-full">
+        <div className="w-full md:w-1/4 h-full">
           {/* <Cart /> */}
-          <div className=" border p-2 rounded-lg md:border-none flex-2 w-full font-medium">
+          <div className=" border p-2 rounded-lg md:border-none flex-col h-full w-full font-medium">
             <div className="flex justify-between px-10 items-center mb-5">
               <h5 className=" text-2xl">cart</h5>
               <p className="text-base">2 items</p>
