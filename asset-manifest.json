@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alexon-fitme/static/css/main.aeea69c1.css",
-    "main.js": "/alexon-fitme/static/js/main.dec62ff3.js",
+    "main.js": "/alexon-fitme/static/js/main.fd020630.js",
     "static/js/787.b76c8325.chunk.js": "/alexon-fitme/static/js/787.b76c8325.chunk.js",
     "static/media/slide1.png": "/alexon-fitme/static/media/slide1.7033905cd5bdf82fc61f.png",
     "static/media/slide2.png": "/alexon-fitme/static/media/slide2.013f5f6cd921fe9c1be0.png",
@@ -28,11 +28,11 @@
     "static/media/menu6.png": "/alexon-fitme/static/media/menu6.d2412d7291b888d8cc1e.png",
     "index.html": "/alexon-fitme/index.html",
     "main.aeea69c1.css.map": "/alexon-fitme/static/css/main.aeea69c1.css.map",
-    "main.dec62ff3.js.map": "/alexon-fitme/static/js/main.dec62ff3.js.map",
+    "main.fd020630.js.map": "/alexon-fitme/static/js/main.fd020630.js.map",
     "787.b76c8325.chunk.js.map": "/alexon-fitme/static/js/787.b76c8325.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aeea69c1.css",
-    "static/js/main.dec62ff3.js"
+    "static/js/main.fd020630.js"
   ]
 }
