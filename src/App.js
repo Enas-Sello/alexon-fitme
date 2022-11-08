@@ -11,9 +11,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="CheckOut" element={<CheckOut />} />
-        <Route path="RestaurantPage" element={<RestaurantPage />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/RestaurantPage/:id" element={<RestaurantPage />} />
+        <Route path="/CheckOut" element={<CheckOut />} />
       </Routes>
       <Footer />
     </Router>
